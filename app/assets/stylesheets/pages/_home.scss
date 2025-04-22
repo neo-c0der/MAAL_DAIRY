@@ -1,9 +1,32 @@
 // Specific CSS for your home-page
 
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .banner-video {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-height: 600px; /* adjust to taste */
   display: block;
+  max-height: 500px; /* adjust as needed */
+}
+
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.banner-heading h1 {
+  font-size: 3rem; /* adjust as needed */
+  margin: 0;
 }

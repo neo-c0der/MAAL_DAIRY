@@ -1,7 +1,13 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<video autoplay muted loop class="banner-video">
-  <source src="<%= asset_path('banner.mp4') %>" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="video-banner">
+  <video id="bannerVideo" muted class="banner-video">
+    <source src="<%= asset_path('banner.mp4') %>" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="banner-heading">
+    <h1>Welcome to Maal Dairy - The Home of Fresh, Organic Camel Milk </h1>
+  </div>
+</div>

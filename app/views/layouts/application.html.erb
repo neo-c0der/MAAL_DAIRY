@@ -14,5 +14,22 @@
 <%= render "shared/flashes" %>
 
     <%= yield %>
+
   </body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("bannerVideo");
+
+        video.addEventListener("mouseenter", () => {
+          video.play();
+        });
+
+        video.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0; // optional: reset to start
+        });
+      });
+    </script>
+
 </html>
