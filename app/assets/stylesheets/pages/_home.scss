@@ -1,32 +1,123 @@
 // Specific CSS for your home-page
 
+// .video-banner {
+//   position: relative;
+//   width: 100%;
+//   height: auto;
+//   overflow: hidden;
+// }
+
+// .banner-video {
+//   width: 100%;
+//   height: auto;
+//   object-fit: cover;
+//   display: block;
+//   max-height: 500px; /* adjust as needed */
+// }
+
+// .banner-heading {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   color: white;
+//   text-align: center;
+//   text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+//   z-index: 1;
+// }
+
+// .banner-heading h1 {
+//   font-size: 3rem; /* adjust as needed */
+//   margin: 0;
+// }
+
+// .btn-ghost {
+//   color: #4A4A4A;
+//   border: 1px solid #4A4A4A;
+//   padding: 8px 24px;
+//   border-radius: 50px;
+//   font-weight: lighter;
+//   opacity: 0.6;
+//   transition: opacity 0.3s ease;
+// }
+
+// .btn-ghost:hover {
+//   opacity: 1;
+// }
+
 .video-banner {
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .banner-video {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
-  max-height: 500px; /* adjust as needed */
+}
+
+.banner-heading,
+.btn.btn-flat {
+  position: absolute;
+  z-index: 2; /* Ensure it's above the video */
+  color: white;
 }
 
 .banner-heading {
-  position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translateX(-50%);
   text-align: center;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
-  z-index: 1;
 }
 
 .banner-heading h1 {
-  font-size: 3rem; /* adjust as needed */
+  width: 80%;
   margin: 0;
+  font-size: 50px; /* Adjust as needed */
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.banner-heading p {
+  font-size: 30px; /* Adjust as needed */
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+
+// .btn.btn-ghost {
+//   bottom: 10%;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   color: white;
+//   border: 1px solid #4A4A4A;
+//   padding: 8px 24px;
+//   border-radius: 50px;
+//   font-weight: bold;
+//   background: gold;
+//   opacity: 0.6;
+//   transition: opacity 0.3s ease;
+// }
+
+// .btn-ghost:hover {
+//   opacity: 1;
+//  }
+
+.btn-flat {
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #f8d302;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #f8dd43;
+  color: white;
 }

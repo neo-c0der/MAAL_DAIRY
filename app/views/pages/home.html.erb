@@ -1,13 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p> %>
 
 <div class="video-banner">
-  <video id="bannerVideo" muted class="banner-video">
+  <video id="bannerVideo" muted class="banner-video" alt="A camel with it's calf">
     <source src="<%= asset_path('banner.mp4') %>" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <div class="banner-heading">
-    <h1>Welcome to Maal Dairy - The Home of Fresh, Organic Camel Milk </h1>
+    <h1>Welcome to <strong>Maal Dairy</strong></h1>
+    <h3>The Home of Fresh, Organic Pasteurised Camel Milk</h3>
   </div>
+
+  <a class="btn btn-flat" href="#">Our Products</a>
+
 </div>

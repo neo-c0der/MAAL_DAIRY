@@ -1,9 +1,27 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+puts "Cleaning the DB..."
+Product.destroy_all
+
+Product.create!([
+  {
+    name: "Fresh Camel Milk - 250ml",
+    description: "Fresh organic pasteurised camel milk.",
+    image: "camel_milk.jpg"
+  },
+  {
+    name: "Fresh Camel Milk - 500ml",
+    description: "Fresh organic pasteurised camel milk.",
+    image: "camel_milk.jpg"
+  },
+  {
+    name: "Strawberry Camel Milk - 250ml",
+    description: "Sweet strawberry camel milk, made with natural strawberry.",
+    image: "strawberry_camel_milk.jpg"
+  },
+  {
+    name: "Chocolate Camel Milk - 250ml",
+    description: "Delicious chocolate camel milk, made with premium cocoa.",
+    image: "chocolate_camel_milk.jpg"
+  }
+])
+
+puts "Done! #{Product.count} created!"
