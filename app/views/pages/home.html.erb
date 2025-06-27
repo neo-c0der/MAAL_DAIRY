@@ -1,17 +1,34 @@
 <%# <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p> %>
 
-<div class="video-banner">
-  <video id="bannerVideo" muted class="banner-video" alt="A camel with it's calf">
-    <source src="<%= asset_path('banner.mp4') %>" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="banner-heading">
-    <h1>Welcome to <strong>Maal Dairy</strong></h1>
-    <h3>The Home of Fresh, Organic Pasteurised Camel Milk</h3>
+<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
   </div>
 
-  <a class="btn btn-flat" href="<%= products_path %>">Our Products</a>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="<%= asset_path('camel&calf.jpg') %>" class="carousel-img" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Welcome to <strong>Maal Dairy</strong></h1>
+        <h3>The Home of Fresh, Organic Pasteurised Camel Milk</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="<%= asset_path('all_camel_milk-1.jpg') %>" class="carousel-img" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <a class="btn btn-flat" href="<%= products_path %>">Our Products</a>
+      </div>
+    </div>
+  </div>
 
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>

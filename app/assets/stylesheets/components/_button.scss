@@ -1,0 +1,17 @@
+.btn-flat-1 {
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #836f02;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin: 50px;
+}
+
+.btn-flat-1:hover {
+  background: #f8dd43;
+  color: white;
+}

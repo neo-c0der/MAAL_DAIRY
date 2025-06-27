@@ -1,1 +1,16 @@
-<h1><%= @product.name %></h1>
+<div class="card-product">
+  <% if @product.image.present? %>
+    <%= image_tag @product.image, class: "card-img-top", alt: @product.name %>
+  <% else %>
+    <%= image_tag "placeholder.jpg", class: "card-img-top", alt: "No image available" %>
+  <% end %>
+
+  <div class="card-product-infos">
+    <h2><%= @product.name %></h2>
+    <p><%= @product.description %></p>
+  </div>
+</div>
+
+<div>
+  <a class="btn-flat-1" href="<%= products_path %>">Return to Products</a>
+</div>
