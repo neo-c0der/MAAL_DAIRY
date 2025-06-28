@@ -1,14 +1,125 @@
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+//   margin-inline: 400px;
+// }
+
+// .navbar-lewagon .navbar-logo img {
+//   width: 120px;
+//   padding-left: 20px;
+//   margin-left: 30px;
+// }
+
+
+// .navbar-lewagon {
+//   background-color: #ffffff;
+//   border-bottom: 1px solid #e0e0e0;
+
+//   .navbar-nav {
+//     .nav-link {
+//       bottom: 30%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       color: white;
+//       padding: 8px 24px;
+//       border-radius: 50px;
+//       background: #bda102;
+//       transition: background 0.3s ease;
+//       text-decoration: none;
+//       margin-left: 20px;
+
+//       &:hover {
+//         background-color: #f8dd43;
+//       }
+//     }
+//   }
+// }
+
+
+
+// Style the navbar background and spacing
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+  background-color: white; // Optional dark background
+  padding: 1rem 0;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+// Center and space out nav links (Bootstrap already uses flex)
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; // Adds space between nav items
+  width: 100%; // Full width to assist centering
 }
+
+// Make nav links look like gold buttons
+.nav-link {
+  background-color: #FFD700; // Gold
+  color: #000 !important; // Ensure text is visible
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  white-space: nowrap; // Prevent text from wrapping
+}
+
+// Hover effect to lighten gold
+.nav-link:hover {
+  background-color: #ffec80; // Lighter gold
+  color: #000 !important;
+}
+
+// Remove underline
+.nav-link {
+  text-decoration: none;
+}
+
 
 .navbar-lewagon .navbar-logo img {
   width: 120px;
   padding-left: 20px;
   margin-left: 30px;
 }
+
+
+
+
+
+    // .nav-item.active .nav-link {
+    //   color: #007bff;
+    //   border-bottom: 2px solid #007bff;
+    // }
+
+
+  // .navbar-logo img {
+  //   height: 40px;
+  // }
+
+  // .avatar {
+  //   width: 32px;
+  //   height: 32px;
+  //   border-radius: 50%;
+  // }
+
+
+// .nav-link {
+//   bottom: 30%;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   color: white;
+//   padding: 8px 24px;
+//   border-radius: 50px;
+//   background: #836f02;
+//   transition: background 0.3s ease;
+//   text-decoration: none;
+//   margin: 20px;
+// }
+
+// .nav-link:hover {
+//   background: #f8dd43;
+//   color: white;
+// }
