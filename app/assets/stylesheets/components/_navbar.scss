@@ -51,7 +51,7 @@
 .navbar-nav {
   display: flex;
   justify-content: center;
-  gap: 1rem; // Adds space between nav items
+  gap: 3rem; // Adds space between nav items
   width: 100%; // Full width to assist centering
 }
 
@@ -64,6 +64,7 @@
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: bold;
+  font-size: 20px;
   white-space: nowrap; // Prevent text from wrapping
 }
 
