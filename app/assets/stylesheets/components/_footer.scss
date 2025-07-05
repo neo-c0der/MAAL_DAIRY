@@ -22,6 +22,23 @@
 .footer-links a:hover {
   opacity: 1;
 }
-.footer .fa-heart {
-  color: #D23333;
+
+
+/* app/assets/stylesheets/application.css (or .scss) */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #836f02;
 }
