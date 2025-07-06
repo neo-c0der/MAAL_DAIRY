@@ -17,11 +17,15 @@
   <body><%= render "shared/navbar" %>
     <%= render "shared/flashes" %>
 
-    <div class="background-wrapper">
+    <div class="background-wrapper-nav">
   <!-- This can be empty — just used for styling -->
     </div>
 
     <%= yield %>
+
+    <div class="background-wrapper-foot">
+  <!-- This can be empty — just used for styling -->
+    </div>
 
     <%= render "shared/footer" %>
   </body>
