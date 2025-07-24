@@ -2,22 +2,19 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <%# Product image %>
-          <% if product.image.present? %>
-            <%= image_tag product.image, class: "card-img-top", alt: product.name %>
-          <% else %>
-            <%= image_tag "placeholder.jpg", class: "card-img-top", alt: "No image available" %>
-          <% end %>
-
-          <div class="card-body">
-            <h5 class="card-title"><%= product.name %></h5>
+        <%= link_to product_path(product), class: "card-link" do %>
+          <div class="card h-100 shadow-sm">
+            <%# Product image %>
+            <% if product.image.present? %>
+              <%= image_tag product.image, class: "card-img-top", alt: product.name %>
+            <% else %>
+              <%= image_tag "placeholder.jpg", class: "card-img-top", alt: "No image available" %>
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= product.name %></h5>
+            </div>
           </div>
-
-          <div class="card-footer text-center">
-            <%= link_to "View Product", product_path(product), class: "btn-flat-1" %>
-          </div>
-        </div>
+        <% end %>
       </div>
     <% end %>
   </div>

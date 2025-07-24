@@ -1,3 +1,22 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+
+
+.card-link {
+  text-decoration: none;
+  color: inherit; // Prevents text color change
+
+  .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+      0 0 10px rgba(131, 111, 2, 0.5),
+      0 8px 20px rgba(131, 111, 2, 0.6),
+      0 12px 40px rgba(131, 111, 2, 0.3) !important;
+  }
+}

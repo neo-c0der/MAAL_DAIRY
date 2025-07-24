@@ -64,7 +64,7 @@
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px !important;
   white-space: nowrap; // Prevent text from wrapping
 }
 
@@ -87,7 +87,21 @@
 }
 
 
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+// Optional: refine right-aligned nav
+.navbar-nav.ms-auto {
+  margin-left: auto;
+}
+
+.shift-right {
+  margin-left: 8rem; // Or try 6rem or more
+}
 
 
     // .nav-item.active .nav-link {
