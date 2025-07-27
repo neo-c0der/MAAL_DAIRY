@@ -8,11 +8,6 @@ Product.create!([
     image: "camel_milk.jpg"
   },
   {
-    name: "Fresh Camel Milk - 500ml",
-    description: "Fresh organic pasteurised camel milk.",
-    image: "camel_milk.jpg"
-  },
-  {
     name: "Strawberry Camel Milk - 250ml",
     description: "Sweet strawberry camel milk, made with natural strawberry.",
     image: "strawberry_camel_milk.jpg"
@@ -21,6 +16,11 @@ Product.create!([
     name: "Chocolate Camel Milk - 250ml",
     description: "Delicious chocolate camel milk, made with premium cocoa.",
     image: "chocolate_camel_milk.jpg"
+  },
+  {
+    name: "Fresh Camel Milk - 500ml",
+    description: "Fresh organic pasteurised camel milk.",
+    image: "camel_milk.jpg"
   }
 ])
 
